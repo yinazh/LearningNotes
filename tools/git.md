@@ -22,7 +22,9 @@ $ssh -T git@"your github ip address"
 
 then you can submit your code 
 
-## submit your code 
+## upload code 
+
+### master to submit
 
 $git clone https://github.com/yinazh/hello-world.git
 
@@ -37,6 +39,8 @@ $git add .
 $git commit -m "update README.md"
 
 $git push -u origin master
+
+### newbranch to submit
 
 $git branch newbranch
 
@@ -53,3 +57,25 @@ $git push origin master
 $git merge yinazh master
 
 $git push origin yinazh:master
+
+## while create new repository on Github 
+
+### new repository
+
+$echo "# android_self_source" >> README.md
+
+$git init
+
+$git add README.md
+
+$git commit -m "first commit"
+
+$git remote add origin https://github.com/yinazh/android_self_source.git
+
+$git push -u origin master
+
+### push an existing repository from the command line
+
+$git remote add origin https://github.com/yinazh/android_self_source.git
+
+$git push -u origin master
