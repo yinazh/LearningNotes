@@ -1,6 +1,7 @@
-#Learning Github Operations
+# Learning Github Operations
 
-##github config operations:
+## github config operations:
+
 (1) please config your name and your email
 
 $git config --global user.email "xxx"
@@ -21,7 +22,7 @@ $ssh -T git@"your github ip address"
 
 then you can submit your code 
 
-##submit your code 
+## submit your code 
 
 $git clone https://github.com/yinazh/hello-world.git
 
