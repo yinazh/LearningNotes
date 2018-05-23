@@ -1,0 +1,96 @@
+#markdown使用笔记
+- [ubuntu下markdown安装与使用](http://blog.csdn.net/vintionnee/article/details/34433125)
+- [markdown使用教程](http://blog.wentong.me/2014/06/markdown-cheatsheet/)
+- [csdn markdown使用教程](http://blog.csdn.net/bendanban/article/details/44179247)
+##使用详解
+###在markdown中添加代码
+   在需要高亮的代码块的前一行及后一行使用三个反引号“`”，同时第一行反引号后面表面代码块所使用的语言,例如：
+```java
+   class TEST{
+      public static void main(String[] args){
+         System.out.println();
+      }
+   }
+```
+###在markdown中插入表格
+　　Markdown生成的表格是使用冒号来选择左 :---、右 ---: 或者居中 :---: 对齐的。其中代码中第二行中的短线的数量可以根据美观来定。例如: 
+
+***
+|姓名|年龄|学历|
+|:-------|:-------:|-------:| 
+|张珊|15|本科|
+|李四|12|研究生|
+
+
+
+###在markdown中插入图片
+  ![hust](http://www.hust.edu.cn/images/logo.gif)
+  即这种语法格式：　`![xxx](path)`
+###在markdown中插入超链接
+　中括号后跟一个小括号，中括号中加入提示的文字，圆括号中加入的是超链接，格式如下：
+　　`[名称](路径)`
+###在markdown中引用论文的格式
+　　在正文中使用两个相邻的两个中括号。第一个中括号中添加提示文字，第二个中括号中添加一个id，可以使数字，字母等。 
+　　在文本的最后添加类似参考文献的格式：一个中括号，后跟一个冒号，然后再跟连接地址。第一个中括号中填入id。例如：  
+`[提示文字][1]`  
+`[1]: http://blog.csdn.net/bendanban`  
+还可以直接在正文中使用两个尖括号将超链接包括起来,如下：  
+`<http://blog.csdn.net/bendanban> or <sawpara@126.com>`
+###关于标题与字体
+`# 一级标题`  
+`## 二级标题`  
+`### 三级标题`  
+###粗体斜体生成
+`*斜体*`  
+`**粗体**`  
+`***加粗斜体***`  
+###分割线
+空一行后，使用三个以上的短线、星号、或者下划线
+
+`***`  `---`  `___`
+都可以
+###引用
+在“>”符号之后跟一个空格，然后添加引用内容，例如:  
+`> 这是引用的内容！！！`  
+
+##以下是在CSDN中，特殊的使用方法
+### 数学公式
+使用MathJax渲染*LaTex* 数学公式，详见[math.stackexchange.com][1].
+
+ - 行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。
+ - 块级公式：
+
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+### UML 图:
+
+可以渲染序列图：
+
+```sequence
+张三->李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四-->张三: 忙得吐血，哪有时间写。
+```
+
+或者流程图：
+
+```flow
+st=>start: 开始
+e=>end: 结束
+op=>operation: 我的操作
+cond=>condition: 确认？
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+下面是特殊的表示链接
+[序列图][4]
+[流程图][5]
+[4]: http://bramp.github.io/js-sequence-diagrams/
+[5]: http://adrai.github.io/flowchart.js/
+
+
+
+
+
